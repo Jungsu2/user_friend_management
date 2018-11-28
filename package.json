@@ -1,0 +1,30 @@
+{
+  "name": "graphql-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "lite-server",
+    "generate": "gql-gen --url http://localhost:4000/graphql --template ts --out ./src/types.d.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.1.0",
+    "apollo-server-express": "^2.1.0",
+    "bluebird": "^3.5.2",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.4",
+    "graphql": "^14.0.2",
+    "graphql-server-express": "^1.4.0",
+    "graphql-tools": "^4.0.2",
+    "ioredis": "^4.2.0",
+    "pg-promise": "^8.5.1",
+    "promise": "^8.0.2"
+  },
+  "devDependencies": {
+    "lite-server": "^2.4.0"
+  }
+}
