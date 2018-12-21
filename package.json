@@ -11,6 +11,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/bluebird": "^3.5.24",
+    "@types/graphql": "^14.0.3",
+    "@types/ioredis": "^4.0.4",
+    "@types/jest": "^23.3.10",
+    "@types/node": "^10.12.12",
     "apollo-server": "^2.1.0",
     "apollo-server-express": "^2.1.0",
     "bluebird": "^3.5.2",
@@ -25,6 +30,7 @@
     "promise": "^8.0.2"
   },
   "devDependencies": {
+    "jest": "^23.6.0",
     "lite-server": "^2.4.0"
   }
 }

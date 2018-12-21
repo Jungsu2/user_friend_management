@@ -1,9 +1,9 @@
-import { typeDefs, resolvers } from "./graphql/user";
 import express from 'express';
 
 // GraphQL
-import { ApolloServer, gql } from 'apollo-server-express';
-const server = new ApolloServer({ typeDefs, resolvers });
+import { ApolloServer } from 'apollo-server-express';
+import { schema } from './graphql/schema';
+const server = new ApolloServer({ schema });
 
 const app = express();
 server.applyMiddleware({ app });
